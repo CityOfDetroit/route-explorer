@@ -80,10 +80,10 @@ class RouteLink extends Component {
         </div>
         {this.props.icons ?
             <div style={styles.icons}>
-              <Link to={{ pathname: `/route/${this.props.id}/stops` }}>
+              <Link aria-label="Stops" to={{ pathname: `/route/${this.props.id}/stops` }}>
                 <StopIcon style={styles.svg} />
               </Link>
-              <Link to={{ pathname: `/route/${this.props.id}/schedule` }}>
+              <Link aria-label="Schedule" to={{ pathname: `/route/${this.props.id}/schedule` }}>
                 <ScheduleIcon style={styles.svg} />
               </Link>
             </div>
