@@ -48,7 +48,8 @@ class RouteHeader extends React.Component {
         <div style={{ padding: '1rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
         <div style={{ display: 'flex', alignContent: 'center', alignItems: 'center', fontSize: window.innerWidth < 650 ? '1.5em' : '2em' }}>
         <a href="https://www.detroitmi.gov"><img src={Logo} style={{height: 40, paddingRight: 5}} alt="City of Detroit logo"/></a>
-        <Link style={{ color: '#fff', textDecoration: 'none' }} to={{ pathname: '/' }}>DDOT</Link>
+        {/* Add a phonetic label for screen readers */}
+        <Link aria-label="d dot" style={{ color: '#fff', textDecoration: 'none' }} to={{ pathname: '/' }}>DDOT</Link>
       </div>
           <NavLinks />
         </div>
